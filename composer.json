@@ -3,7 +3,6 @@
   "description": "Multi-guard role permission system for managing role permissions for users.",
   "type": "library",
   "license": "MIT",
-  "version": "1.1.0",
   "authors": [
     {
       "name": "MD. Ashaduzzaman Faruque",
