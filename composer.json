@@ -1,0 +1,47 @@
+{
+  "name": "faruque-ashad/multi_guard_role_permission",
+  "description": "Multi-guard role permission system for managing role permissions for users.",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.2",
+  "authors": [
+    {
+      "name": "MD. Ashaduzzaman Faruque",
+      "email": "ashaduzzaman5698@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FaruqueAshad\\MultiGuardRolePermission\\": "src/"
+    },
+    "files": [
+      "helper/helper.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FaruqueAshad\\MultiGuardRolePermission\\Tests\\": "tests/",
+      "FaruqueAshad\\MultiGuardRolePermission\\Database\\Factories\\": "database/factories/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-filter": "vendor/bin/phpunit --filter"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "FaruqueAshad\\MultiGuardRolePermission\\PackageServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": "^10.0 || ^11.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0",
+    "phpunit/phpunit": "^10.0"
+  }
+}
